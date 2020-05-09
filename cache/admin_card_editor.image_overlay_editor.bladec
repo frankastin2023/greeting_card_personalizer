@@ -1,0 +1,32 @@
+<div class="image-overlay-editor region-editor option-window">
+
+ <header>
+ <h1>Image Overlay Options</h1>
+ <button class="minimize"></button>
+ </header>
+
+ <button class="delete-region">
+ Delete Region
+ </button>
+
+ <div class="image-upload">
+ <input id="image-overlay-upload" style="display:none" type="file" />
+ <label for="image-overlay-upload" class="upload-image">Upload Image</label>
+ </div>
+ 
+
+ <input type="color" id="font-color" value="#000" style="display:none;" />
+ <div class="image-overlay-dimensions ">
+ <div class="image-overlay-options dimesions-editor text-region-dimesions">
+ <span>Width:</span>
+ <input class="image-overlay-width" value="100">
+ <span>Height:</span>
+ <input class="image-overlay-height" value="100">
+ <span>X:</span>
+ <input class="image-overlay-x" value="300">
+ <span>Y:</span>
+ <input class="image-overlay-y" value="400">
+ </div>
+ </div>
+</div>
+

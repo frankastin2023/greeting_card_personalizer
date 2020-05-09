@@ -1,0 +1,98 @@
+#card_layers {
+    .inside {
+        button, label {
+            font-size: 12px;
+            border: none;
+            padding: 9px 15px;
+            border-radius: 4px;
+            margin-right: 5px;
+            background: #e6e6e6cc;
+            cursor: pointer;
+            color: #232323;
+        }
+    }
+    
+}
+
+
+.ui-layer {
+    width: 100px;
+    height: 87px;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    &.selected {
+        background:#CCC;
+    }
+   
+    input {
+            width: 90%;
+            font-size: 12px;
+            bottom: 0;
+            padding: 3px 6px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 4px;
+            margin-left: 5%;
+            display: block;
+            position: absolute;
+        }
+        .ui-delete {
+            float:left;
+        }
+        .fa-text {
+            margin-top: -5px;
+            font-size: 60px;
+        }
+        i {
+            float:right;
+    font-size: 58px;
+    margin-right: 6px;
+        }
+        .image-preview {
+            width: 70px;
+            float: right;
+            margin-right: 6px;
+            height: 44px;
+            margin-top: 8px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+}
+.ui-body{
+    button {
+        font-size: 12px;
+        border: none;
+        padding: 9px 15px;
+        border-radius: 4px;
+        margin-right: 10px;
+        background: #e6e6e6cc;
+        cursor: pointer;
+    }
+    ul {
+       display:flex;
+       li {
+        width: 100px;
+        border: 1px #CCC dashed;
+        height: 100px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        position: relative;
+        margin-right: 10px;
+        
+        input {
+            width: calc(100% - 12px);
+            margin-left:4px;
+            font-size:12px;
+            bottom:0;
+            position:absolute;
+        }
+    } 
+    }
+    
+}
