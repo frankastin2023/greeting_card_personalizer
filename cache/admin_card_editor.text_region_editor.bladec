@@ -1,0 +1,48 @@
+<div class="text-region-editor region-editor option-window">
+
+ <header>
+ <h1>Text Region Options</h1>
+ <button class="minimize"></button>
+ </header>
+
+ <button class="delete-region">
+ Delete Region
+ </button>
+
+ <textarea placeholder="Add some text"></textarea>
+
+ <div class="font-style-buttons clearfix">
+ <div class="font-style button-outlined">font style
+ <ul class="font-styles">
+ <li data-font-family="sans-serif" class="sans-serif selected">Sans Serif</li>
+ <li data-font-family="great vibes" class="great-vibes">Great Vibes</li>
+ <li data-font-family="amatic sc" class="amatic-sc">Amatic SC</li>
+ <li data-font-family="courier prime" class="courier-prime">Courier Prime</li>
+ </ul>
+ </div>
+ <input type="number" class="font-size button-outlined" value="16">
+ <label for="font-color" class="font-color button-outlined"><span /></label>
+ <div class="text-alignment button-outlined align-center">
+ <ul class="text-alignments">
+ <li data-alignment="left" class="align-left button-outlined"></li>
+ <li data-alignment="center" class="align-center button-outlined"></li>
+ <li data-alignment="right" class="align-right button-outlined"></li>
+ </ul>
+ </div>
+ </div>
+
+ <input type="color" id="font-color" value="#000" style="display:none;" />
+ <div class="image-region-dimensions ">
+ <div class="image-region-options dimesions-editor text-region-dimesions">
+ <span>Width:</span>
+ <input class="text-region-width" value="100">
+ <span>Height:</span>
+ <input class="text-region-height" value="100">
+ <span>X:</span>
+ <input class="text-region-x" value="300">
+ <span>Y:</span>
+ <input class="text-region-y" value="400">
+ </div>
+</div>
+</div>
+

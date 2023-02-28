@@ -1,0 +1,214 @@
+.card-canvas {
+    border:2px solid #EEE;
+}
+
+.ui-options {
+    width: 300px;
+    margin-right: 0px;
+    margin-top: -6px;
+    border: 1px solid #ccd0d4;
+    border-top: 0;
+    border-right: 0;
+    float: right;
+}
+
+h1.ui-sidebar-header {
+    padding: 8px 8px;
+    border-bottom: 1px solid #ccd0d4;
+    font-size: 15px;
+    font-weight: bold;
+    background: #f5f5f5;
+    color: #23282d;
+}
+
+.ui-sidebar-options-body {
+    padding: 10px;
+}
+.ui-option {
+    float: left;
+    padding: 10px 0px;
+    label {
+        width: 40%;
+    display: block;
+    float: left;
+    padding-top: 0px;
+    font-size: 13px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    }
+    input {
+        width: 48%;
+        padding: 2px 5px;
+        margin: 0;
+        font-size: 13px;
+    }
+    textarea {
+        width:100%;
+        height: 70px;
+    }
+}
+.col-1 {
+    width: 50%;
+}
+.col-2 {
+    width: 100%;
+}
+span.fa.fa-upload {
+    font-size: 32px;
+    margin-left: 41px;
+    margin-top: -5px;
+}
+label.constrain {
+    width: 129px;
+    padding: 8px 10px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    color: #32373c;
+    padding-bottom: 9px;
+}
+label.constrain.constrained {
+    background: #dadada;
+}
+
+.clearfix.ui-sidebar-options:last-child {
+
+    border-top: 1px solid #ccd0d4;
+}
+
+.ui-dropdown {
+    
+    width: 60%;
+    float: left;
+    position: relative;
+    > div {
+        box-shadow: 0 0 0 transparent;
+        border-radius: 4px;
+        border: 1px solid #7e8993;
+        background-color: #fff;
+        color: #32373c;
+        padding: 7px;
+        cursor: pointer;
+        .fa {
+            float: right;
+        }
+    }
+    ul {
+        border: 1px solid #7e8993;
+        margin-top: -3px;
+        position: absolute;
+        width: 99%;
+        display: none;
+        z-index: 1;
+        li {
+            margin-bottom: 0;
+            padding: 7px;
+            background: #FFF;
+            cursor: pointer;
+        }
+        li:hover {
+            background: #f3f3f3;
+        }
+    }
+    
+}
+.ui-option input[type="text"] {
+    width: 100%;
+}
+
+.ui-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 41px;
+    padding: 2px 1px !important;
+
+}
+label.font-color {
+    height: 22px;
+    width: 33px;
+    margin-top: 6px;
+}
+.montserrat {
+    font-family: 'Montserrat';
+}
+.libre-baskerville {
+    font-family: 'Libre Baskerville';
+}
+.lobster {
+    font-family: 'Lobster';
+}
+.dancing-script {
+    font-family: 'Dancing Script';
+}
+.bangers {
+    font-family: 'Bangers';
+}
+.satisfy {
+    font-family: 'Satisfy';
+}
+.gfs-didot {
+    font-family: 'GFS Didot', serif;
+}
+.autumn-in-november {
+    font-family: 'autumn-in-november';
+}
+
+.loading-spinner {
+    background: #00000047;
+    position: absolute;
+    width: 100%;
+    left: -1px;
+    top: -6px;
+    height: calc(100% + 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+
+        display: inline-block;
+  width: 80px;
+  height: 80px;
+    }
+
+    div:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+}
+
+div#card_stage .inside {
+    padding: 0 !important;
+    padding-left: 6px !important;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+#card_woocommerce .ui-option {
+    padding: 5px 0px;
+    input {
+        width: 20%;
+
+    margin-left: 10px;
+    }
+    label {
+        width: 50%;
+    }
+}

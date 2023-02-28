@@ -1,0 +1,20 @@
+<ul v-if="views">
+ <?php echo static::e(test); ?>
+
+ <li  v-for="(view ,index) in views" :key="index" @click="changeActiveView(index)" class="ui-view" :class="view.selected ? 'selected' : ''">
+ <div @click="deleteView(index)" class="ui-delete"><span class="fa fa-times"></span></div>
+ <div :style="'background-image:url(' + view.image + ')'" class="ui-view-image"></div>
+ <input class="ui-view-name" v-model="view.name"  />
+ </li>
+ <li @click="toggleModal">
+ <div class="plus">+</div>
+ <p>Add View</p>
+ </li>
+</ul>
+<div v-show="ui.modals.viewsModal" class="ui-modal-background">
+ <div class="ui-modal" >
+ <h2>Add View name <div class="close"  @click="toggleModal"><span class="fa fa-times"></span></div></h2>
+ <input type="text" @keyup.enter="addView()" v-model="viewName" placeholder="View name, eg: Front of card"/>
+ <button @click="addView()">Add View</button>
+ </div>
+</div>

@@ -1,0 +1,107 @@
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+    div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+  }
+
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+
+  #card_stage {
+    position: relative;
+    canvas {
+        border: 1px solid #CCC;
+    
+    }
+  }
+
+  .editableLayer {
+    position: absolute;
+    border: 3px dotted #bbc3be;
+    cursor: pointer;
+    i {
+      background:#bbc3be;
+    color: #FFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    padding-left: 1px;
+    padding-top: 6px;
+    text-align: center;
+    margin-top: -15px;
+    margin-left: -15px;
+    position: absolute;
+    }
+    i.fa-text {
+      border-radius: 100%;
+      padding-left: 0px;
+      padding-top: 7px;
+    }
+}
+
+.editableLayer:hover {
+  background:rgba(255,255,255,0.4);
+}
+.editableLayer.selected {
+  border: 3px solid #F4ACB7;
+  i {
+    background: #f4acb7;
+  }
+}
+
+.preview-canvas {
+  border: 3px solid #F4ACB7;
+}
+@media (max-width: 992px){
+  .container, .container-md, .container-sm {
+    max-width: 90%;
+  }
+}

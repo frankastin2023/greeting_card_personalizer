@@ -1,0 +1,73 @@
+<div class="image-region-editor region-editor">
+ <div class="image-region-options option-window">
+ <header>
+ <h1>Image Region Options</h1>
+ <button class="minimize"></button>
+ </header>
+ <button class="delete-region">
+ Delete Region
+ </button>
+ <button class="reset-image">
+ Reset photo
+ </button>
+ <canvas width="100" height="100" class="photo-preview"></canvas>
+ <div class="photo-tools">
+ <div class="photo-tool-tab-buttons">
+ <button class="choose-image">Choose Image</button>
+ <button class="position-image">Position Image</button>
+ <button class="image-effects">Image Effects</button>
+ <div class="under-line"></div>
+ </div>
+ <div class="photo-tool-tabs">
+ <div class="photo-tool-tab image-upload">
+ <input id="image-upload" style="display:none" type="file" />
+ <label for="image-upload" class="upload-image">Upload Image</label>
+ </div>
+ <div class="photo-tool-tab photo-position-tools ">
+
+ <div class="photo-tool-zoom">
+ <button class="zoom-in"></button>
+ <button class="zoom-out"></button>
+ </div>
+
+ <div class="photo-tool-position">
+
+ <div class="button-container clearfix">
+ <button class="image-position-up"></button>
+ <button class="image-position-right"></button>
+ <button class="image-position-left"></button>
+ <button class="image-position-down"></button>
+ </div>
+ </div>
+
+ <div class="photo-tool-rotation">
+ <canvas></canvas>
+ </div>
+
+ </div>
+ <div class="photo-tool-tab photo-tool-effects">
+ <div class="button-container">
+ <button class="button-outlined filter-button-black-and-white">black & white</button>
+ <button class="button-outlined filter-button-faded">faded</button>
+ <button class="button-outlined filter-button-sepia">sepia</button>
+ <button class="button-outlined filter-button-null selected">no effects</button>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="image-region-dimensions">
+ <div class="image-region-options dimesions-editor image-region-dimesions">
+
+ <span>Width:</span>
+ <input class="image-region-width" value="100">
+ <span>Height:</span>
+ <input class="image-region-height" value="100">
+ <span>X:</span>
+ <input class="image-region-x" value="300">
+ <span>Y:</span>
+ <input class="image-region-y" value="400">
+
+ </div>
+ </div>
+</div>
